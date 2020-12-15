@@ -1,4 +1,3 @@
-import answer as answer
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404, redirect
@@ -17,7 +16,7 @@ def question_create(request):
         form = QuestionForm(request.POST)
         if form.is_valid():
             question = form.save(commit=False)
-            answer.author = request.user  # 추가한 속성 author 적용
+            question.author = request.user  # 추가한 속성 author 적용
             from django.utils import timezone
             question.create_date = timezone.now()
             question.save()
