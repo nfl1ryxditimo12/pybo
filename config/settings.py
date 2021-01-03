@@ -25,7 +25,7 @@ SECRET_KEY = '2_ldet@rl+0bngw(g-q4ix2@(0z1-3u$bi6uj=btm#qtv=v@pj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['3.35.254.94', 'seongsu.me']
+ALLOWED_HOSTS = ['3.35.254.94']
 
 
 # Application definition
